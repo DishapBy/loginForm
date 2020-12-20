@@ -102,7 +102,7 @@ const LoginForm: React.FC = () => {
                     {errors.email && touched.email ? <div>{errors.email}</div> : null}
 
                     <label htmlFor="email">Password</label>
-                    <Field onChange={changePassword} value={passwordState} name="password" placeholder="password"/>
+                    <Field type={'password'} onChange={changePassword} value={passwordState} name="password" placeholder="password"/>
 
                     <button type="submit" className="waves-effect waves-light btn-large">Submit</button>
                 </Form>
