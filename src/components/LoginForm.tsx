@@ -82,6 +82,7 @@ const LoginForm: React.FC = () => {
             .then(response => {
                 if (response.ok) {
                     setIsLogged(false);
+                    setEmailState('');
                     setUserInfo('');
                     setResponseToken('');
                 }
